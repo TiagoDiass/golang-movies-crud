@@ -14,7 +14,6 @@ import (
 
 type Movie struct {
 	ID       string    `json:"id"`
-	Isbn     string    `json:"isbn"`
 	Title    string    `json:"title"`
 	Director *Director `json:"director"`
 }
@@ -97,7 +96,6 @@ func main() {
 
 	movies = append(movies, Movie{
 		ID:    "1",
-		Isbn:  "438227",
 		Title: "Ready Player One",
 		Director: &Director{
 			Firstname: "Steven",
@@ -107,7 +105,6 @@ func main() {
 
 	movies = append(movies, Movie{
 		ID:    "2",
-		Isbn:  "438228",
 		Title: "Avatar 2: The way of water",
 		Director: &Director{
 			Firstname: "James",
